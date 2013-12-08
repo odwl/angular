@@ -1,0 +1,10 @@
+<div>
+  <div>
+    {{ctrl.counter}}
+  </div>
+  <div>
+    <button ng-click="ctrl.start()" ng-disabled="ctrl.startDisabled">Start</button>
+    <button ng-click="ctrl.stop()"  ng-disabled="!ctrl.startDisabled">Stop</button>
+    <button ng-click="ctrl.reset()" ng-disabled="ctrl.resetDisabled">Reset</button>
+  </div>
+</div>

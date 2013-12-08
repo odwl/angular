@@ -1,0 +1,22 @@
+<div class="widgets">
+  <div>
+    <input type="text" maxlength="15" ng-model="ctrl.pirateNameInput">
+  </div>
+  <div>
+    <button class="button"
+            ng-click="ctrl.buttonClicked($event)" 
+            ng-disabled="ctrl.isDisabled">
+      {{ctrl.buttonText}}
+    </button>
+    <p>You clicked the button {{ctrl.count}} times.</p>
+  </div>
+</div>
+<div class="badge">
+  <div class="greeting">
+    Arrr! Me name is
+  </div>
+  <div class="name">
+    <span>{{ctrl.pirate.pirateName}}</span>
+  </div>
+</div>
+

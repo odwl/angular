@@ -1,0 +1,18 @@
+<h1>Anagram</h1>
+        
+<h3>Pile:</h3>
+<button-list letters="ctrl.pileLetters" 
+             letter-selected="ctrl.addLetter($letter)">
+</button-list>
+
+<h3>Word:</h3>
+<button-list letters="ctrl.resultLetters" 
+             letter-selected="ctrl.moveLetter($letter)">
+</button-list>
+  
+<div>  
+  <h3>Scrabble Value:</h3>
+  <p>{{ctrl.wordvalue}}</p>
+</div>
+
+<button ng-click="ctrl.newletters()"> new letters </button>
